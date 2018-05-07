@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import React, { Component } from 'react'
 // import { bindActionCreators } from 'redux'
-import  actonCreators from './actions'
+import * as actonCreators from './actions'
 // @connect(state => ({
 //   text:state.count
 // }),dispatch=>({

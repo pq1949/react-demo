@@ -22,6 +22,9 @@ import { handleActions } from 'redux-actions'
 // export default handleAction(actionTypes.DECREASE, (state) => ({ count: state.count - 1 }), { count: 0 })
 
 export default handleActions({
-  [actionTypes.INCREASE]: (state, action) => ({ count: state.count + 1 }),
+  [actionTypes.INCREASE]: (state, action) => {
+    debugger
+    return { count: state.count + 1 }
+  },
   [actionTypes.DECREASE]: (state, action) => ({ count: state.count - 1 })
 }, { count: -2 })
